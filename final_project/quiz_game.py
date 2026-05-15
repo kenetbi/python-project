@@ -49,22 +49,21 @@ def question_prompt(topic_name):
         print("\nInvalid topic. Please choose Math, History, or Science.")
         return question_prompt(input("Choose a quiz topic (Math, History, Science): ").lower())
     
-    random.shuffle(topic_name)
     for q in topic_name:
         print(q["question"])
         for option in q["options"]:
             print(option)
         user_answer_prompt(topic_name)
 
-
 def user_answer_prompt(topic_name):
     user_answer = input("Enter your answer (A, B, C, or D): ").upper()
-    if user_answer not in ["A", "B", "C", "D"]:
+
+    while user_answer not in ["A", "B", "C", "D"]:
         print("\nInvalid input. Please enter A, B, C, or D.")
-        return user_answer_prompt(topic_name)
-    else:
-        progress(user_answer, topic_name)
-        print("")
+        user_answer = input("Enter your answer (A, B, C, or D): ").upper()
+        
+    progress(user_answer, topic_name)
+    print("")
 
 print("===================================================")
 print("            Welcome to the Quiz Game!")
