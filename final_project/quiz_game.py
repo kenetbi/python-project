@@ -1,5 +1,3 @@
-
-
 current_score = 0
 questions_answered = 0
 
