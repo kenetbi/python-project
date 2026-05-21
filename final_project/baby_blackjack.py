@@ -1,4 +1,5 @@
 import random, time
+# Baby Blackjack - Finalized
 
 cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "king"] * 4
 dealer_total = 0
