@@ -36,7 +36,7 @@ def is_winner(player_total, dealer_total):
         print("\n It's a TIE!")
 
 
-dealer = ["ace", "king"]
+dealer = random.sample(cards, 2)
 player = random.sample(cards, 2)
 
 for card in dealer:
