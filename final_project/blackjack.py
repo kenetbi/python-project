@@ -162,13 +162,12 @@ if not is_player_busted and not is_dealer_blackjack:
             else:
                 print(f"The Dealer's total: {dealer_total}.")
                 print("The dealer stands.")
-                break
+            print("Dealer's card:", end=" | ")
+            for card in dealer:
+                print(f"{card}", end=" | ")
+            print("\n") 
         else:
             break
-        print("Dealer's card:", end=" | ")
-        for card in dealer:
-            print(f"{card}", end=" | ")
-        print("\n")
 
     if not is_dealer_busted and not is_player_blackjack:
         is_winner(player_total, dealer_total)
