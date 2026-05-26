@@ -1,5 +1,0 @@
-print("May 1, 2026")
-print("I am feeling good right now!")
-print("I want to be a developer once I learned this code.")
-print("Be consistent!")
-print("👋👋👋👋")
